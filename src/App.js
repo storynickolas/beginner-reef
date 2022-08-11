@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Route, BrowserRouter, Routes, Switch } from "react-router-dom";
+import NavBar from './NavBar';
+import Fish from './Fish'
+import Coral from './Coral';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h1>Reef Tank Advice</h1>
+      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/fish"><Fish/></Route>
+          <Route exact path="/coral"><Coral/></Route>
+        </Switch>
+      
+      </BrowserRouter>
+      <h1>Reef Tank Advice</h1>
+   
+      {/* <button onClick={handleClick}>Change Amimals</button>
         <p>
           REEF TANK ADVICE
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <ul>
+        {fish.map((item) => 
+          <li key={item.id}>
+            <img src={item.image} alt={item.name}/>
+            {item.name}
+          </li>
+          )}
+        </ul> */}
     </div>
   );
 }
