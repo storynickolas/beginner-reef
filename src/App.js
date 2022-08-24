@@ -16,12 +16,10 @@ function App() {
       <header className="App-header">
         <h1>Beginner Reef Tank Advice</h1>
         <NavBar/>
-        <h4>Fish, Coral and Invertebrates Recommendations For Beginners</h4>
       </header>
         <WishList/>
-        <Home />
         <Switch>
-          <Route exact path="/"><Fish/></Route>
+          <Route exact path="/"><Home /></Route>
           <Route exact path="/fish"><Fish/></Route>
           <Route exact path="/coral"><Coral/></Route>
           <Route exact path="/inverts"><Inverts/></Route>
