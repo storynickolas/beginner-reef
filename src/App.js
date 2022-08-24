@@ -7,6 +7,7 @@ import Inverts from './Components/Inverts';
 import NavBar from './Components/NavBar';
 import Form from './Components/Form';
 import WishList from './Components/Wishlist';
+import Home from './Components/Home';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <h4>Fish, Coral and Invertebrates Recommendations For Beginners</h4>
       </header>
         <WishList/>
+        <Home />
         <Switch>
           <Route exact path="/"><Fish/></Route>
           <Route exact path="/fish"><Fish/></Route>
