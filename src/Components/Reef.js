@@ -6,7 +6,7 @@ function Reef({input}) {
   const [fish, setFish] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:3001/${input}`)
+    fetch(`http://localhost:3000/${input}`)
       .then((response) => response.json())
       .then((data) => {
         setFish(data)

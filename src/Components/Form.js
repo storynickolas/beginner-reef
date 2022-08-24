@@ -40,7 +40,7 @@ function Form() {
 
   function submitForm(e) {
     e.preventDefault();
-    fetch(`http://localhost:3001/${newItem}`, newObject);
+    fetch(`http://localhost:3000/${newItem}`, newObject);
   };
     
 

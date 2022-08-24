@@ -1,0 +1,118 @@
+{
+  "fish": [
+    {
+      "id": 1,
+      "name": "Clownfish",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Amphiprion_ocellaris_%281%29.jpg/1200px-Amphiprion_ocellaris_%281%29.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Firefish",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fire_dartfish_%28Nemateleotris_magnifica%29_%2843372442502%29.jpg/1200px-Fire_dartfish_%28Nemateleotris_magnifica%29_%2843372442502%29.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chromis",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Chromis_viridis_2011.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Blenny",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cricket_%28Salarias_fasciatus%29.jpg/1200px-Cricket_%28Salarias_fasciatus%29.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cardinalfish",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Pterapogon_kauderni1.JPG/1200px-Pterapogon_kauderni1.JPG"
+    },
+    {
+      "id": 6,
+      "name": "Yellowtail Damselfish",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Chrysiptera_parasema.JPG"
+    },
+    {
+      "id": 7,
+      "name": "Orange Spotted Goby",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Nes_longus.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Coral Beauty Angelfish",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Centropyge_bispinosa_1.jpg/1200px-Centropyge_bispinosa_1.jpg"
+    }
+  ],
+  "coral": [
+    {
+      "id": 1,
+      "name": "Green Striped Mushroom",
+      "image": "https://www.tankfacts.com/photos/12/Corals/thumb_455x300/Green_Striped_Mushroom_Actinodiscus.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Toadstool Mushroom Leather Coral",
+      "image": "https://www.tankfacts.com/photos/12/Corals/thumb_455x300/Green_Toadstool_Mushroom_Leather_Coral.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Taro Tree Coral",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Capnella_sp.JPG/1920px-Capnella_sp.JPG"
+    },
+    {
+      "id": 4,
+      "name": "Colony Polyp",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Zoanthus-dragon-eye.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pumping Xenia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Coral_pulsante_%28Xenia_umbellata%29%2C_Ras_Katy%2C_Sharm_el-Sheij%2C_Egipto%2C_2022-03-26%2C_DD_96.jpg/1920px-Coral_pulsante_%28Xenia_umbellata%29%2C_Ras_Katy%2C_Sharm_el-Sheij%2C_Egipto%2C_2022-03-26%2C_DD_96.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Starburst Polyp",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Pachiclavularia_viridis.JPG/2560px-Pachiclavularia_viridis.JPG"
+    }
+  ],
+  "inverts": [
+    {
+      "id": 1,
+      "name": "Peppermint Shrimp",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lysmata_wurdemanni_%28I0560%29_%2815872417089%29.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Emerald Crab",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Female_Mithraculus_sculptus_Crab.jpg/2560px-Female_Mithraculus_sculptus_Crab.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Cerith Snail",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cerithidae_-_Cerithium_caeruleum.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dwarf Red Tip Hermit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Paguristes_cadenati.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Banded Trochus Snail",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Trochus_maculatus_01.JPG/2560px-Trochus_maculatus_01.JPG"
+    },
+    {
+      "id": 6,
+      "name": "Pincushion Urchin",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Diadema_setosum_%28Kenya%29.JPG/1920px-Diadema_setosum_%28Kenya%29.JPG"
+    },
+    {
+      "id": 7,
+      "name": "Nassarius Snail",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Nassarius_tiarula.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Brittle Sea Star",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Brittle_starfish_in_kona.jpg"
+    }
+  ]
+}
