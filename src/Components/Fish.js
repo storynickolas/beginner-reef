@@ -1,12 +1,12 @@
-import './App.css';
+import '../App.css';
 import React from 'react';
 import Reef from './Reef';
-import { Link } from 'react-router-dom';
 
 
 function Fish() {
   return (
     <div className="Fish">
+      <h1>Beginner Reef Fish</h1>
       <Reef input='fish'/>
     </div>
   );
