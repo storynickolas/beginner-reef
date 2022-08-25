@@ -1,17 +1,19 @@
 import '../App.css'
 import React from 'react';
-import Reef from './Reef';
 
 
 function WishList({wish}) {
   return (
-    <div className="Coral">
+    <div>
       <h1>Your Wish List</h1>
-      {wish.map((item) => 
-          <div key={wish.indexOf(item)} className="card2">
-            <img src={item} />
-          </div>
-      )}
+      <div className="wishlist">
+        {wish.map((item) => 
+            <div key={item.name} className="card2">
+              <img src={item.image} alt={item.name} className="wish"/>
+              <p>{item.name}</p>
+            </div>
+        )}
+      </div>
     </div>
   );
 }

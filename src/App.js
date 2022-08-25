@@ -25,7 +25,6 @@ function App() {
         <NavBar/>
       </header>
         <WishList wish={wish}/>
-        <button onClick={addCow} /> 
         <Switch>
           <Route exact path="/"><Home /></Route>
           <Route exact path="/fish"><Fish wish={wish} addCow={(cow) => addCow(cow)}/></Route>

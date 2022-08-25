@@ -34,11 +34,23 @@ img { max-width: 100%}
   color: #094067;
   border: dimgray solid 1px;
   border-radius: 10px;
-  padding: 1rem;
-  width: 15rem;
+  /* padding: 1rem; */
+  width: 8rem;
   height: 10rem;
-  display: inline-grid;
-  margin: 1rem 2rem;
+  display: inline-block;
+  /* margin: 1rem 2rem; */
   box-shadow: 3px 4px dimgray;
   background-color: white;
+  align-self: center;
 }
+
+.wishlist {
+  display: flex;
+  justify-content: center;
+  /* position: fixed; */
+}
+
+.wish {
+  height: 5rem;
+}
+
