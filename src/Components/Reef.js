@@ -17,7 +17,7 @@ function Reef({input, wish, addCow}) {
     <div className="app">
         {fish.map((item) => 
           <div key={item.id} className="card">
-            <button onClick={() => addCow(item.name)}></button>
+            <button onClick={() => addCow(item.image)}></button>
             <h2>{item.name}</h2>
             <img src={item.image} alt={item.name}/>
           </div>

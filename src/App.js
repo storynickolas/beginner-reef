@@ -15,7 +15,6 @@ function App() {
 
   function addCow(duck) {
     setWish([...wish, duck])
-    console.log(wish)
   }
 
   return (
@@ -25,7 +24,7 @@ function App() {
         <h1>Beginner Reef Tank Advice</h1>
         <NavBar/>
       </header>
-        <WishList/>
+        <WishList wish={wish}/>
         <button onClick={addCow} /> 
         <Switch>
           <Route exact path="/"><Home /></Route>

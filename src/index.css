@@ -28,3 +28,17 @@ img { max-width: 100%}
   box-shadow: 3px 4px dimgray;
   background-color: white;
 }
+
+.card2 {
+  text-align: center;
+  color: #094067;
+  border: dimgray solid 1px;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 15rem;
+  height: 10rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px dimgray;
+  background-color: white;
+}
