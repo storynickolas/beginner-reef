@@ -25,7 +25,7 @@ function App() {
     <div className="App">
        <BrowserRouter>
       <header className="App-header">
-        <h1>Beginner Reef Tank Advice</h1>
+        <h1>Reef-O-Rama</h1>
         <NavBar/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>

@@ -5,6 +5,23 @@ function NavBar() {
   return (
     <div>
       <NavLink
+          to="/"
+          exact
+          style={
+            {
+              background: "white",
+              padding: '20px',
+              color: "#094067"
+            }
+          }
+          activeStyle={{
+            background: 'rgb(61, 169, 252)',
+            color: 'white'
+          }}
+        >
+        Home
+      </NavLink>
+      <NavLink
           to="/fish"
           exact
           style={
