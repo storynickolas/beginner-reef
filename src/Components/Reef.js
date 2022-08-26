@@ -16,10 +16,12 @@ function Reef({animalType, addWish, title}) {
 
   return (
     <div className="app">
-        <h1>{title}</h1>
-        {fish.length > 0 && fish.map((item) => 
+      <h1>{title}</h1>
+      {
+        fish.length > 0 && fish.map((item) => 
           <Card item={item} addWish={addWish}/>
-          )}
+        )
+      }
     </div>
   );
 }
