@@ -4,12 +4,14 @@ This app has a basic inventory of popular choices of aquatic life that are often
 
 ## Additional Resources
 
-json-server
+### json-server
+
 Assuming you have json-server installed globally, you can run this command to run the server:
 
 $ json-server --watch db.json
 
 You can consult the [json-server](https://www.npmjs.com/package/json-server) docs for more information.
 
-Create React App
+### Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
