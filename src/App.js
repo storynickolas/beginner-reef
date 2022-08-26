@@ -1,13 +1,11 @@
 import './App.css';
 import React, { useState } from 'react';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-import Fish from './Components/Fish';
-import Coral from './Components/Coral';
-import Inverts from './Components/Inverts';
 import NavBar from './Components/NavBar';
 import Form from './Components/Form';
 import WishList from './Components/Wishlist';
 import Home from './Components/Home';
+import Reef from './Components/Reef';
 
 function App() {
   const [wish, setWish] = useState([])
@@ -30,10 +28,30 @@ function App() {
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
-          <Route exact path="/"><Home /></Route>
-          <Route exact path="/fish"><Fish  addWish={addWish}/></Route>
-          <Route exact path="/coral"><Coral addWish={addWish}/></Route>
-          <Route exact path="/inverts"><Inverts addWish={addWish}/></Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/fish">
+            <Reef
+              title='Beginner Reef Fish'
+              animalType='fish' 
+              addWish={addWish}
+            />
+          </Route>
+          <Route exact path="/coral">
+            <Reef 
+              title='Beginner Reef Coral'
+              animalType='coral' 
+              addWish={addWish}
+            />
+          </Route>
+          <Route exact path="/inverts">
+            <Reef
+              title='Beginner Reef Invertebrate'
+              animalType='inverts' 
+              addWish={addWish}
+            />
+          </Route>
           <Route exact path="/addItem"><Form/></Route>
         </Switch>
       </BrowserRouter>

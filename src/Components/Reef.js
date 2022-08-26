@@ -1,26 +1,24 @@
 import '../App.css';
 import React, { useEffect, useState } from 'react';
+import Card from './Card';
 
-function Reef({input, addWish}) {
+function Reef({animalType, addWish, title}) {
 
   const [fish, setFish] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:3000/${input}`)
+    fetch(`http://localhost:3000/${animalType}`)
       .then((response) => response.json())
       .then((data) => {
         setFish(data)
       });
-  }, []);
+  }, [animalType]);
 
   return (
     <div className="app">
-        {fish.map((item) => 
-          <div key={item.id} className="card">
-            <h2>{item.name}</h2>
-            <img src={item.image} alt={item.name}/>
-            <button onClick={() => addWish(item)}>Add to WishList</button>
-          </div>
+        <h1>{title}</h1>
+        {fish.length > 0 && fish.map((item) => 
+          <Card item={item} addWish={addWish}/>
           )}
     </div>
   );
