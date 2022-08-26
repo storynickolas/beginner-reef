@@ -11,10 +11,14 @@ import Home from './Components/Home';
 
 function App() {
   const [wish, setWish] = useState([])
-  let donkey
 
-  function addCow(duck) {
-    setWish([...wish, duck])
+  function addWish(newWish) {
+    setWish([...wish, newWish])
+  }
+
+  function removeWish(minus) {
+    let cow = wish.filter((word) => word.name !== minus)
+    setWish([...cow])
   }
 
   return (
@@ -24,15 +28,16 @@ function App() {
         <h1>Beginner Reef Tank Advice</h1>
         <NavBar/>
       </header>
-        <WishList wish={wish}/>
+      <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
           <Route exact path="/"><Home /></Route>
-          <Route exact path="/fish"><Fish wish={wish} addCow={(cow) => addCow(cow)}/></Route>
-          <Route exact path="/coral"><Coral wish={wish} addCow={addCow}/></Route>
-          <Route exact path="/inverts"><Inverts wish={wish} addCow={addCow}/></Route>
+          <Route exact path="/fish"><Fish  addWish={addWish}/></Route>
+          <Route exact path="/coral"><Coral addWish={addWish}/></Route>
+          <Route exact path="/inverts"><Inverts addWish={addWish}/></Route>
           <Route exact path="/addItem"><Form/></Route>
         </Switch>
       </BrowserRouter>
+      <div className='fill'/>
     </div>
   );
 }

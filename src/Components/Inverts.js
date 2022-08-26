@@ -3,11 +3,11 @@ import React from 'react';
 import Reef from './Reef';
 
 
-function Inverts({wish, addCow}) {
+function Inverts({addWish}) {
   return (
     <div className="inverts">
       <h1>Beginner Reef Invertebrates</h1>
-      <Reef input='inverts' wish={wish} addCow={addCow}/>
+      <Reef input='inverts' addWish={(cow) => addWish(cow)}/>
     </div>
   );
 }

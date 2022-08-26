@@ -36,7 +36,7 @@ img { max-width: 100%}
   border-radius: 10px;
   /* padding: 1rem; */
   width: 8rem;
-  height: 10rem;
+  height: 13rem;
   display: inline-block;
   /* margin: 1rem 2rem; */
   box-shadow: 3px 4px dimgray;
@@ -47,10 +47,31 @@ img { max-width: 100%}
 .wishlist {
   display: flex;
   justify-content: center;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .wish {
   height: 5rem;
 }
+
+.wishlistBox {
+  position: fixed;
+  min-height: 18rem;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  background-color: rgba(255,255,255, 0.5);
+  right: 0;
+}
+
+.wishlistBox2 {
+  position: fixed;
+  min-height: 5rem;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  background-color: rgba(255,255,255, 0.5);
+  right: 0;
+}
+
 

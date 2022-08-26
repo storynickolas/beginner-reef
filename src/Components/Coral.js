@@ -3,11 +3,11 @@ import React from 'react';
 import Reef from './Reef';
 
 
-function Coral({wish, addCow}) {
+function Coral({addWish}) {
   return (
     <div className="Coral">
       <h1>Beginner Reef Coral</h1>
-      <Reef input='coral' wish={wish} addCow={addCow}/>
+      <Reef input='coral' addWish={(cow) => addWish(cow)}/>
     </div>
   );
 }

@@ -70,7 +70,7 @@ function NavBar() {
           color: 'white'
         }}
       >
-        Add Animal
+        Additions
       </NavLink>
     </div>
   );

@@ -52,6 +52,7 @@
 
 .form-page {
   min-height: 50em;
+  min-width: 50em;
 }
 
 .submit {
@@ -69,4 +70,12 @@
 
 .input {
   margin-left: 20px;
+}
+
+.fill {
+  min-height: 18rem;
+}
+
+.remove {
+  background-color: rgba(255,255,255, 0.8);
 }
