@@ -23,10 +23,9 @@ function App() {
     setWish([...cow])
   }
 
-  function handleSearch(e) {
-    e.preventDefault();
-    let newSearch = e.target.value
-    setSearch(newSearch)
+  function handleSearch(e, query) {
+    e.preventDefault()
+    console.log(query)
   }
 
   return (
@@ -35,7 +34,7 @@ function App() {
       <header className="App-header">
         <h1>Reef-O-Rama</h1>
         <NavBar/>
-        <Search handleSearch={handleSearch} search={search}/>
+        <Search handleSearch={handleSearch}/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
@@ -48,6 +47,7 @@ function App() {
               title='Beginner Reef Fish'
               animalType='fish' 
               addWish={addWish}
+              search={search}
             />
           </Route>
           <Route exact path="/coral">
