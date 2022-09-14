@@ -25,7 +25,7 @@ function App() {
 
   function handleSearch(e, query) {
     e.preventDefault()
-    console.log(query)
+    setSearch(query)
   }
 
   return (
