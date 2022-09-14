@@ -10,6 +10,7 @@ import Search from './Components/Search';
 
 function App() {
   const [wish, setWish] = useState([])
+  const [search, setSearch] = useState()
 
   function addWish(newWish) {
     if(wish.indexOf(newWish) === -1) {
@@ -22,13 +23,19 @@ function App() {
     setWish([...cow])
   }
 
+  function handleSearch(e) {
+    e.preventDefault();
+    let newSearch = e.target.value
+    setSearch(newSearch)
+  }
+
   return (
     <div className="App">
        <BrowserRouter>
       <header className="App-header">
         <h1>Reef-O-Rama</h1>
         <NavBar/>
-        <Search/>
+        <Search handleSearch={handleSearch} search={search}/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
