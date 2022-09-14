@@ -1,23 +1,12 @@
 import '../App.css'
 import React, { useState } from 'react';
 
-function Search({ handleSearch, clearSearch }) {
-  const [newSearch, setNewSearch] = useState()
-
-  function handleChange(e) {
-    e.preventDefault();
-    let mySearch = e.target.value
-    setNewSearch(mySearch)
-  }
+function Search({ handleSearch }) {
 
   return (
     <div>
       <h3>SEARCH: 
-        <form onSubmit={(e) => handleSearch(e, newSearch)}>
-          <input onChange={handleChange}></input>
-          <button>Search</button>
-        </form>
-        <button onClick={clearSearch}>Clear</button>
+          <input onChange={handleSearch} ></input>
       </h3>
       <br />
       <br />

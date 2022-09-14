@@ -11,7 +11,6 @@ import Search from './Components/Search';
 function App() {
   const [wish, setWish] = useState([])
   const [search, setSearch] = useState('')
-  const [clear, setClear] = useState(true)
 
   function addWish(newWish) {
     if(wish.indexOf(newWish) === -1) {
@@ -24,16 +23,11 @@ function App() {
     setWish([...cow])
   }
 
-  function handleSearch(e, query) {
+  function handleSearch(e) {
     e.preventDefault()
-    let capitalSearch = query.charAt(0).toUpperCase() + query.slice(1)
-    setClear(false)
+    let mySearch = e.target.value
+    let capitalSearch = mySearch.charAt(0).toUpperCase() + mySearch.slice(1)
     setSearch(capitalSearch)
-  }
-
-  function clearSearch() {
-    setClear(true)
-    setSearch('')
   }
 
   return (
@@ -42,7 +36,7 @@ function App() {
       <header className="App-header">
         <h1>Reef-O-Rama</h1>
         <NavBar/>
-        <Search handleSearch={handleSearch} clearSearch={clearSearch}/>
+        <Search handleSearch={handleSearch}/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
@@ -56,7 +50,6 @@ function App() {
               animalType='fish' 
               addWish={addWish}
               search={search}
-              clear={clear}
             />
           </Route>
           <Route exact path="/coral">
