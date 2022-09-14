@@ -26,8 +26,7 @@ function App() {
   function handleSearch(e) {
     e.preventDefault()
     let mySearch = e.target.value
-    let capitalSearch = mySearch.charAt(0).toUpperCase() + mySearch.slice(1)
-    setSearch(capitalSearch)
+    setSearch(mySearch)
   }
 
   return (

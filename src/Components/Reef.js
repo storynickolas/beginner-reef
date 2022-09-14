@@ -26,7 +26,7 @@ function Reef({animalType, addWish, title, search}) {
     }
     else {
       fish.forEach((item) => {
-      if(item.name.startsWith(search) === true){
+      if(item.name.toUpperCase().includes(search.toUpperCase()) === true){
         cows.push(item)
       }
       })
