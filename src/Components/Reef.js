@@ -7,6 +7,7 @@ function Reef({animalType, addWish, title, search}) {
   const [fish, setFish] = useState([])
 
   useEffect(() => {
+    console.log(search)
     fetch(`http://localhost:3000/${animalType}`)
       .then((response) => response.json())
       .then((data) => {

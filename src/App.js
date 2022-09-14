@@ -29,13 +29,17 @@ function App() {
     setSearch(capitalSearch)
   }
 
+  function clearSearch() {
+    console.log('Clear')
+  }
+
   return (
     <div className="App">
        <BrowserRouter>
       <header className="App-header">
         <h1>Reef-O-Rama</h1>
         <NavBar/>
-        <Search handleSearch={handleSearch}/>
+        <Search handleSearch={handleSearch} clearSearch={clearSearch}/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
@@ -57,6 +61,7 @@ function App() {
               title='Beginner Reef Coral'
               animalType='coral' 
               addWish={addWish}
+              search={search}
             />
           </Route>
           <Route exact path="/inverts">
@@ -65,6 +70,7 @@ function App() {
               title='Beginner Reef Invertebrate'
               animalType='inverts' 
               addWish={addWish}
+              search={search}
             />
           </Route>
           <Route exact path="/addItem"><Form/></Route>
