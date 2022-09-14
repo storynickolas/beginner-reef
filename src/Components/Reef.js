@@ -19,7 +19,7 @@ function Reef({animalType, addWish, title}) {
       <h1>{title}</h1>
       {
         fish.length > 0 && fish.map((item) => 
-          <Card item={item} addWish={addWish}/>
+          <Card key={item.name} item={item} addWish={addWish}/>
         )
       }
     </div>

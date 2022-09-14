@@ -6,12 +6,15 @@ import Form from './Components/Form';
 import WishList from './Components/Wishlist';
 import Home from './Components/Home';
 import Reef from './Components/Reef';
+import Search from './Components/Search';
 
 function App() {
   const [wish, setWish] = useState([])
 
   function addWish(newWish) {
-    setWish([...wish, newWish])
+    if(wish.indexOf(newWish) === -1) {
+      setWish([...wish, newWish])
+    }
   }
 
   function removeWish(minus) {
@@ -25,6 +28,7 @@ function App() {
       <header className="App-header">
         <h1>Reef-O-Rama</h1>
         <NavBar/>
+        <Search/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
@@ -33,6 +37,7 @@ function App() {
           </Route>
           <Route exact path="/fish">
             <Reef
+              key='fish'
               title='Beginner Reef Fish'
               animalType='fish' 
               addWish={addWish}
@@ -40,6 +45,7 @@ function App() {
           </Route>
           <Route exact path="/coral">
             <Reef 
+              key='coral'
               title='Beginner Reef Coral'
               animalType='coral' 
               addWish={addWish}
@@ -47,6 +53,7 @@ function App() {
           </Route>
           <Route exact path="/inverts">
             <Reef
+              key='inverts'
               title='Beginner Reef Invertebrate'
               animalType='inverts' 
               addWish={addWish}
