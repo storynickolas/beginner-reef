@@ -10,7 +10,7 @@ import Search from './Components/Search';
 
 function App() {
   const [wish, setWish] = useState([])
-  const [search, setSearch] = useState()
+  const [search, setSearch] = useState('')
 
   function addWish(newWish) {
     if(wish.indexOf(newWish) === -1) {
