@@ -31,6 +31,7 @@ function App() {
 
   function clearSearch() {
     setSearch('')
+    document.getElementById("search").value = ''
   }
 
   return (

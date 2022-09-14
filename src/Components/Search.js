@@ -6,7 +6,7 @@ function Search({ handleSearch }) {
   return (
     <div>
       <h3>SEARCH: 
-          <input onChange={handleSearch} ></input>
+          <input id='search' onChange={handleSearch} ></input>
       </h3>
       <br />
       <br />
