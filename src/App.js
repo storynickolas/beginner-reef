@@ -25,7 +25,8 @@ function App() {
 
   function handleSearch(e, query) {
     e.preventDefault()
-    setSearch(query)
+    let capitalSearch = query.charAt(0).toUpperCase() + query.slice(1)
+    setSearch(capitalSearch)
   }
 
   return (

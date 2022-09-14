@@ -16,13 +16,15 @@ function Reef({animalType, addWish, title, search}) {
 
   useEffect(() => {
     let cows = []
-    console.log(search)
-    // fish.forEach((item) => {
-    //   if(item.name.startsWith(search)){
-    //     console.log(item)
-    //   }
-    // })
-  }, [search]);
+    fish.forEach((item) => {
+      console.log(item.name.startsWith('Clownfish'))
+      // console.log(item.name)
+      // console.log(search)
+      // if(item.name.startsWith(search) === true){
+      //   console.log(item)
+      // }
+    })
+  }, [fish, search]);
 
   return (
     <div className="app">
