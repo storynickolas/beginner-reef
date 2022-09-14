@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ clearSearch }) {
   return (
     <div>
       <NavLink
@@ -35,6 +35,7 @@ function NavBar() {
             background: 'rgb(61, 169, 252)',
             color: 'white'
           }}
+          onClick={() => clearSearch()}
         >
         Fish
       </NavLink>
@@ -52,6 +53,7 @@ function NavBar() {
           background: 'rgb(61, 169, 252)',
           color: 'white'
         }}
+        onClick={() => clearSearch()}
       >
         Coral
       </NavLink>
@@ -69,6 +71,7 @@ function NavBar() {
           background: 'rgb(61, 169, 252)',
           color: 'white'
         }}
+        onClick={() => clearSearch()}
       >
         Invertebrates
       </NavLink>

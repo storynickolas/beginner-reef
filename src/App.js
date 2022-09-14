@@ -29,12 +29,16 @@ function App() {
     setSearch(mySearch)
   }
 
+  function clearSearch() {
+    setSearch('')
+  }
+
   return (
     <div className="App">
        <BrowserRouter>
       <header className="App-header">
         <h1>Reef-O-Rama</h1>
-        <NavBar/>
+        <NavBar clearSearch={clearSearch}/>
         <Search handleSearch={handleSearch}/>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>

@@ -7,15 +7,6 @@ function Reef({animalType, addWish, title, search}) {
   const [fish, setFish] = useState([])
 
   useEffect(() => {
-    console.log(search)
-    fetch(`http://localhost:3000/${animalType}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setFish(data)
-      });
-  }, [animalType]);
-
-  useEffect(() => {
     let cows = []
     if(search === ''){
       fetch(`http://localhost:3000/${animalType}`)
@@ -30,12 +21,9 @@ function Reef({animalType, addWish, title, search}) {
         cows.push(item)
       }
       })
-      if(search !== '') {
-        setFish(cows)
-      }
+      setFish(cows)
     }
-    
-  }, [search]);
+  }, [animalType, search]);
 
   return (
     <div className="app">
