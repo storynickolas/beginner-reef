@@ -15,8 +15,9 @@ function Search({ handleSearch, clearSearch }) {
       <h3>SEARCH: 
         <form onSubmit={(e) => handleSearch(e, newSearch)}>
           <input onChange={handleChange}></input>
-          <button onClick={clearSearch}>Clear</button>
+          <button>Search</button>
         </form>
+        <button onClick={clearSearch}>Clear</button>
       </h3>
       <br />
       <br />

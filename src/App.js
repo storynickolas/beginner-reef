@@ -11,6 +11,7 @@ import Search from './Components/Search';
 function App() {
   const [wish, setWish] = useState([])
   const [search, setSearch] = useState('')
+  const [clear, setClear] = useState(true)
 
   function addWish(newWish) {
     if(wish.indexOf(newWish) === -1) {
@@ -26,11 +27,13 @@ function App() {
   function handleSearch(e, query) {
     e.preventDefault()
     let capitalSearch = query.charAt(0).toUpperCase() + query.slice(1)
+    setClear(false)
     setSearch(capitalSearch)
   }
 
   function clearSearch() {
-    console.log('Clear')
+    setClear(true)
+    setSearch('')
   }
 
   return (
@@ -53,6 +56,7 @@ function App() {
               animalType='fish' 
               addWish={addWish}
               search={search}
+              clear={clear}
             />
           </Route>
           <Route exact path="/coral">

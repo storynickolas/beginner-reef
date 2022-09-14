@@ -2,7 +2,7 @@ import '../App.css';
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
 
-function Reef({animalType, addWish, title, search}) {
+function Reef({animalType, addWish, title, search, clear}) {
 
   const [fish, setFish] = useState([])
 
@@ -17,15 +17,27 @@ function Reef({animalType, addWish, title, search}) {
 
   useEffect(() => {
     let cows = []
-    fish.forEach((item) => {
+    if(clear){
+      console.log(clear)
+      fetch(`http://localhost:3000/${animalType}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setFish(data)
+      });
+    }
+    else {
+      console.log(clear)
+      fish.forEach((item) => {
       if(item.name.startsWith(search) === true){
         cows.push(item)
       }
-    })
-    if(search !== '') {
-      setFish(cows)
+      })
+      if(search !== '') {
+        setFish(cows)
+      }
     }
-  }, [search]);
+    
+  }, [clear]);
 
   return (
     <div className="app">
