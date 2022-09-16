@@ -1,5 +1,7 @@
 # Reef-O-Rama
 
+![Basic Page](Reef Sample Page.png)
+
 This app has a basic inventory of popular choices of aquatic life that are often recommended to the beginner saltwater aquarium hobbyist.  Pages are broken into categories including: fish, coral and invertebrates.  If something stands out to you, you can click on the 'add to wishlist' button and it will appear in your wishlist located at the bottom of the screen.  If you change your mind, to remove it from your wishlist click the 'Remove' button.  If you have a recommendation you can add it on the additions page.
 
 ## Additional Resources
