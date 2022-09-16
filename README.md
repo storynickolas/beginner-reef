@@ -18,8 +18,9 @@ This will copy all the files from this repo down to your computer
 
 In your terminal, cd into the directory you just created
 
-$ npm install 
-
+```bash
+npm install 
+```
 to install all dependencies
 
 ### json-server
@@ -28,14 +29,18 @@ For this project json-server was used to create a mock Rest API
 
 Assuming you have json-server installed globally, you can run this command to run the server:
 
-$ json-server --watch db.json
+```bash
+json-server --watch db.json
+```
 
 You can consult the [json-server](https://www.npmjs.com/package/json-server) docs for more information.
 
 Finally,
 
-$ npm run start 
- 
+```bash
+npm run start 
+```
+
 to run the app locally.
 
 ## Additional Resources
