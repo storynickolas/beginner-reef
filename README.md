@@ -48,3 +48,8 @@ to run the app locally.
 ### Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## License
+
+MIT license @ [MIT](https://github.com/facebook/react/blob/main/LICENSE).
+
