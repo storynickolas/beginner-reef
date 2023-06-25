@@ -32,6 +32,8 @@ function Reef({animalType, addWish, title, search}) {
           <Card key={item.name} item={item} addWish={addWish}/>
         )
       }
+      <div className="fill">
+      </div>
     </div>
   );
 }

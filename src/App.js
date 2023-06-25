@@ -42,7 +42,7 @@ function App() {
         <NavBar clearSearch={clearSearch}/>
         <Search handleSearch={handleSearch}/>
       </header>
-      {/* <WishList wish={wish} removeWish={removeWish}/> */}
+      <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
           <Route exact path="/">
             <Home />

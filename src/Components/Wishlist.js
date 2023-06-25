@@ -1,11 +1,13 @@
 import '../App.css'
-import React from 'react';
+import React, { useState } from 'react';
 
 
 function WishList({wish, removeWish}) {
 
+  const [hide, setHide] = useState(false)
+
   const displayWish = () => {
-    if(wish.length !== 0){
+    if(wish.length !== 0 && hide){
       return 'wishlistBox'
     }
     else {
@@ -15,7 +17,11 @@ function WishList({wish, removeWish}) {
 
   return (
     <div className={displayWish()}>
-      <h1>Your Wish List</h1>
+      {hide ? 
+      <h1>Your Wish List <button onClick={() => setHide(!hide)}><i class="arrow down"></i></button></h1>
+      :
+      <h1>Your Wish List <button onClick={() => setHide(!hide)}><i class="arrow up"></i></button></h1>
+    }
       <div className='wishlist'>
         {wish.map((item) => 
             <div 
