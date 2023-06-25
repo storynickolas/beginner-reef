@@ -1,10 +1,8 @@
 import '../App.css'
-import React, { useState } from 'react';
+import React from 'react';
 
 
-function WishList({wish, removeWish}) {
-
-  const [hide, setHide] = useState(false)
+function WishList({wish, removeWish, hide, setHide}) {
 
   const displayWish = () => {
     if(wish.length !== 0 && hide){

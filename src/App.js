@@ -11,8 +11,13 @@ import Search from './Components/Search';
 function App() {
   const [wish, setWish] = useState([])
   const [search, setSearch] = useState('')
+  const [hide, setHide] = useState(false)
+
 
   function addWish(newWish) {
+    if(hide === false) {
+      setHide(true)
+    }
     if(wish.some(item => item.name === newWish.name)){
       console.log("Object found inside the array.");
     } else{
@@ -41,12 +46,10 @@ function App() {
        <BrowserRouter>
       <header className="App-header">
         <h2>Reef-O-Rama</h2>
-   
         <NavBar clearSearch={clearSearch}/>
         <Search handleSearch={handleSearch}/>
-        <button onClick={() => console.log(wish)}>Click Me</button>
       </header>
-      <WishList wish={wish} removeWish={removeWish}/>
+      <WishList wish={wish} removeWish={removeWish} hide={hide} setHide={setHide}/>
         <Switch>
           <Route exact path="/">
             <Home />
