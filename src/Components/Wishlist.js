@@ -18,9 +18,9 @@ function WishList({wish, removeWish}) {
   return (
     <div className={displayWish()}>
       {hide ? 
-      <h1>Your Wish List <button onClick={() => setHide(!hide)}><i class="arrow down"></i></button></h1>
+      <h1>Your Wish List <button onClick={() => setHide(!hide)}><i className="arrow down"></i></button></h1>
       :
-      <h1>Your Wish List <button onClick={() => setHide(!hide)}><i class="arrow up"></i></button></h1>
+      <h1>Your Wish List <button onClick={() => setHide(!hide)}><i className="arrow up"></i></button></h1>
     }
       <div className='wishlist'>
         {wish.map((item) => 

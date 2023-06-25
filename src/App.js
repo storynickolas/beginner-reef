@@ -13,7 +13,9 @@ function App() {
   const [search, setSearch] = useState('')
 
   function addWish(newWish) {
-    if(wish.indexOf(newWish) === -1) {
+    if(wish.some(item => item.name === newWish.name)){
+      console.log("Object found inside the array.");
+    } else{
       setWish([...wish, newWish])
     }
   }
@@ -38,9 +40,11 @@ function App() {
     <div className="App">
        <BrowserRouter>
       <header className="App-header">
-        <h1>Reef-O-Rama</h1>
+        <h2>Reef-O-Rama</h2>
+   
         <NavBar clearSearch={clearSearch}/>
         <Search handleSearch={handleSearch}/>
+        <button onClick={() => console.log(wish)}>Click Me</button>
       </header>
       <WishList wish={wish} removeWish={removeWish}/>
         <Switch>
