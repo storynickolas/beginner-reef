@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #90b4ce
+  background-color: #90b4ce;
+  max-height: 70vh;
 }
 
 .App-logo {
@@ -15,8 +16,10 @@
 }
 
 .App-header {
+  /* background-color: red; */
   background-color: #094067;
-  min-height: 10em;
+  /* min-height: 10em; */
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,8 +54,9 @@
 }
 
 .form-page {
-  min-height: 50em;
-  min-width: 50em;
+  background-color: #90b4ce;
+  min-height: 70vh;
+  width: 100%;
 }
 
 .submit {
@@ -72,10 +76,38 @@
   margin-left: 20px;
 }
 
-.fill {
+/* .fill {
   min-height: 18rem;
-}
+} */
 
 .remove {
   background-color: rgba(255,255,255, 0.8);
+}
+
+.Testing {
+  background-color: red;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+}
+
+.sample img{
+  width: auto;
+  height: 70vh;
+}
+
+.Coral {
+  column-count: 2;
+  background-color: #90b4ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  background-color: #90b4ce;
+  max-height: 68vh;
+  overflow-y: scroll;
 }

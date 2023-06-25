@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function NavBar({ clearSearch }) {
   return (
-    <div>
+    <div >
       <NavLink
           to="/"
           exact
