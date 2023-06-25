@@ -9,7 +9,7 @@ function Search({ handleSearch }) {
       <br/>
       <br/>
       <label>Search:  </label>
-      <input id='search' onChange={handleSearch}></input>
+      <input id='search' onChange={handleSearch} ></input>
     </div>
   );
 }
